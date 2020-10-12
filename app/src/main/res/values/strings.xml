@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">Keep Records</string>
+
+    <!--label for name -->
+    <string name="label_name">Name</string>
+    <!--label for total amount -->
+    <string name="label_amount">Total Amount</string>
+    <!--label for amount paid -->
+    <string name="label_paid">Amount Paid</string>
+    <!--label for amount remaining to be paid -->
+    <string name="label_remaining">Amount Remaining</string>
+    <string name="insert_dummy_data">Insert dummy data</string>
+    <string name="delete_all">Delete all</string>
+    <string name="clear">Clear</string>
+    <string name="save">Save</string>
+</resources>

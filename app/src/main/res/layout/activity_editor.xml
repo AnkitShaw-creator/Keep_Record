@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="@dimen/activity_margin"
+    tools:context=".EditorActivity">
+
+    <!-- Overview category -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <!-- Label -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/CategoryStyle"
+            android:text="@string/label_name" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_weight="1">
+            <!-- Input fields for name -->
+            <EditText
+                android:id="@+id/edit_name"
+                android:hint="Enter the name"
+                android:inputType="textCapWords"
+                style="@style/EditorFieldStyle" />
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/container_total"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <!-- Label -->
+        <TextView
+            android:text="@string/label_amount"
+            style="@style/CategoryStyle" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_weight="1">
+
+            <!-- Input field for Total amount-->
+            <EditText
+                android:id="@+id/edit_tAmount"
+                android:hint="Total amount"
+                android:inputType="number"
+                style="@style/EditorFieldStyle" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/container_paid"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <!-- Label -->
+        <TextView
+            android:text="@string/label_paid"
+            style="@style/CategoryStyle" />
+
+       <LinearLayout
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:orientation="vertical"
+           android:layout_weight="1">
+
+           <!-- Input field for amount paid till date-->
+           <EditText
+               android:id="@+id/edit_pAmount"
+               android:hint="Amount paid"
+               android:inputType="number"
+               style="@style/EditorFieldStyle"
+               android:autofillHints="" />
+
+       </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/container_paid_today"
+        android:orientation="horizontal">
+        <TextView
+            android:text="Paid today"
+            style="@style/CategoryStyle"/>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_weight="1">
+
+            <!-- input field for the amount paid today-->
+            <EditText
+                android:id="@+id/edit_pAmount_today"
+                style="@style/EditorFieldStyle"
+                android:hint="Amount paid today"
+                android:inputType="number" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/container_remaining"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <!-- Label -->
+        <TextView
+            android:text="@string/label_remaining"
+            style="@style/CategoryStyle" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_weight="1">
+            <!-- Input field for amount remaining to be paid-->
+            <EditText
+                android:id="@+id/edit_rAmount"
+                style="@style/EditorFieldStyle"
+                android:hint="Remaining amount"
+                android:inputType="number" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>
